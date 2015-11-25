@@ -1,1 +1,1 @@
-var app = angular.module('SCApp', []);
+var scApp = angular.module('scApp', []);
