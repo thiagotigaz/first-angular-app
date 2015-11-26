@@ -3,14 +3,14 @@ scApp.controller('ProductCtrl', ['$scope', 'ProductService', function($scope, Pr
 	$scope.products = ProductService.getProducts();
 	$scope.p = [];
 
-	$scope.addProduct = function(){
-		ProductService.addProduct($scope.p);
+	$scope.saveProduct = function(){
+		ProductService.saveProduct($scope.p);
 		$scope.p = [];
-	}
+	};
 
 	$scope.removeProduct = function(product){
 		ProductService.removeProduct(product);
-	}
+	};
 
 	$scope.clearForm = function(){
 		$scope.p = [];
